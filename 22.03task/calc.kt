@@ -1,6 +1,6 @@
 fun main()
 {
-    println("Enter 1st number:")
+    println("Enter 1st number: ")
     var a=readLine()!!.toInt()
 
     println("Enter operator: ")
@@ -11,24 +11,27 @@ fun main()
 
     when(op)
     {
-
         "+"->
         {
-            println(a+b)
+            var c=a+b
+            println("Addition:$c")
+
         }
         "-"->
         {
-            println(a-b)
+            var d=a-b
+            println("Substraction:$d")
         }
         "*"->
         {
-            println(a*b)
+            var e=a*b
+            println("Multiplication:$e")
         }
         "/"->
         {
-            println(a/b)
+            var f=a/b
+            println("Division:$f")
         }
-
     }
 
 }
