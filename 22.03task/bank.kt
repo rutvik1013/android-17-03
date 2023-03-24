@@ -1,13 +1,16 @@
+import java.math.BigInteger
+
 class bank {
     constructor(id:Int)
     {
+
         println("$id")
     }
     constructor(id:Int,name:String)
     {
         println("$id,$name")
     }
-    constructor(id:Int,name:String,acc_no:Int)
+    constructor(id:Int,name:String,acc_no:BigInteger)
     {
         println("$id,$name,$acc_no")
     }
@@ -15,6 +18,17 @@ class bank {
 }
 fun main()
 {
-    var b1=bank(102,"Rutvik")
-    var b2=bank(102,"Rutvik",10009898)
+    println("Enter Your id:")
+    var id=readLine()!!.toInt()
+
+    println("Enter Your name:")
+    var name=readLine()
+
+    println("Enter Your Account Number:")
+    var acc_no=readLine()!!.toBigInteger()
+
+    var b1=bank(id)
+    var b2=bank(id,"$name",acc_no)
+
+
 }
