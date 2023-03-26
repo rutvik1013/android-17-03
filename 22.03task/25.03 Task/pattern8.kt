@@ -1,15 +1,16 @@
 fun main()
 {
-    for(i in 1..5)
+    for (i in 1..5)
     {
-        for(k in i downTo 5-1)
+        for (k in (5-1) downTo i)
         {
-            println(" ")
+            print(" ")
         }
-        for(j in 1..i)
+        for (j in 1..i)
         {
-            print("$j")
+            print("$j ")
         }
+
         println()
     }
 }
