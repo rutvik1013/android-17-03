@@ -1,22 +1,21 @@
 fun main()
 {
-    println("Enter Number:")
-    var n=readLine()!!.toInt()
-    var number=0
-    for(i in 2 until n)
+    var n=0
+    var a=0
+
+    println("Enter Any Number:")
+     n=readLine()!!.toInt()
+
+    for(i in 2..n/2)
     {
         if(n%i==0)
         {
-            number=1
-            break
+            println("Not prime Number")
+            a=1
         }
     }
-    if(number==1)
+    if(a==0)
     {
         println("Prime Number")
-    }
-    else
-    {
-        println("Not prime")
     }
 }
